@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+.mother {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    gap: 200px;
+    margin-top: 50px;
+
+}
+
+.logo-img {
+    height: 200px;
+}
+
+header {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-evenly;
+}
+
+.header-logo {
+    height: 50px;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+a:hover {
+    font-size: 30px;
+    transition: 0.5s ease-out;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+p {
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.5s ease-in;
+}
+
+p:hover {
+    font-size: 26px;
+    transition: 0.5s ease-out;
+}
+
+button {
+    background-color: yellow;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.5s ease-out;
+    margin-top: 40px;
+}
+
+.section-button:hover {
+    transition: 0.5s ease-in;
+    font-size: 25px;
+    width: 220px;
+    height: 55px;
+}
+
+form {
+    background-color: #FFFF;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 20px;
+    top: 30%;
+    left: -230px;
+    transition: left 1s ease-in-out;
+}
+
+input {
+    color: black;
+    height: 40px;
+    width: 200px;
+    background-color: #FFF;
+    border-radius: 5px;
+    outline-color: yellow;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+input::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+textarea {
+    color: black;
+    height: 100px;
+    width: 200px;
+    background-color: #FFF;
+    border-radius: 5px;
+    outline-color: yellow;
+    border: 1px solid black;
+    padding-left: 5px;
+    resize: none;
+}
+
+
+.form-button {
+    background-color: yellow;
+    color: #000;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    margin-top: 0;
+}
+
+.mask {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
+    body {
+        height: 100vh;
+    }
+
+    .mother {
+        padding: 5px;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 40px;
+        margin: 0;
+    }
+
+    section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .logo-img {
+        width: 80vw;
+        height: auto;
+    }
+
+    header {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        gap: 10px;
+    }
+
+    .paragraph {
+        display: none;
+    }
+
+    button {
+        margin-top: 40px;
+    }
+
+    p {
+        text-align: center;
+        font-size: auto;
+    }
+
+    p:hover {
+        font-size: auto;
+    }
+}
